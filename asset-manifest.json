@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sitioreact-consultores/static/css/main.073c9b0a.css",
+    "main.js": "/sitioreact-consultores/static/js/main.1f1627e4.js",
+    "static/js/787.cc4e593a.chunk.js": "/sitioreact-consultores/static/js/787.cc4e593a.chunk.js",
+    "static/media/logo.svg": "/sitioreact-consultores/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sitioreact-consultores/index.html",
+    "main.073c9b0a.css.map": "/sitioreact-consultores/static/css/main.073c9b0a.css.map",
+    "main.1f1627e4.js.map": "/sitioreact-consultores/static/js/main.1f1627e4.js.map",
+    "787.cc4e593a.chunk.js.map": "/sitioreact-consultores/static/js/787.cc4e593a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1f1627e4.js"
+  ]
+}
