@@ -1,27 +1,38 @@
-import { useState } from 'react';
-import AppForm from './Componente/AppForm';
-
-function App() {
-
-  const [idActual, setIdActual] = useState('');
-  const [docsBD, setDocsBD] = useState('');
+import {collection,getDocs, query, doc, deleteDoc, where, } from "firebase/firestore";
+import './App.css';
+import React, { useEffect,useState } from 'react';
+import  {db} from './componente/firebase2';
+import  Appform from './componente/Appform';
  
-const fnRead = ()  {
-console.log("Lectura a BD");
-}
+function App() {
+  ///////////////////READ/////////////////
+  ////
+  ///
+  const [idActual,setIdActual] = useState("");
+  const [docsBD, setDocsBD] = useState([]);
+  const [orden, setOrden] = useState(0);
+  const i=1;
+///////////////LECTURA A BASE DE DATOS///////////
+  const fnRead = async() => {
+    console.log("Lectura a BD")
+  }
+  useEffect(() =>{
+  }, [idActual])
 
-const fnDelete = ()  {
-  console.log("Delete");
+  const fnDelete = ()=> {
+    console.log("Eliminar registro")
   }
 
-
   return (
-    <div style = {{background:"greenyellow",width:"350px"}}>
-     <AppForm{...{idActual,setIdActual,fnRead}}/>
+    <div style={{background:"greenyellow",width:"350px"}}>
+      <h1>sitiocopia2 (App.js)</h1>
+    <Appform {...{idActual, setIdActual, fnRead}}/>{
+      docsBD.map(   (p) => App.js)
+    }
     </div>
   );
 }
 
 export default App;
-const fnRead = ()  {
+
   
