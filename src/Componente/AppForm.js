@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { collection, getDocs,query,DOMFactory,deleteDoc,where,onSnapshot} from "firebase/firestore"
 
-const AppForm = () => {
+import React, {useEffect,useState}
 
     const camposRegistro = {nombre:"", edad:"", genero:""}
-    const [objeto, setObjeto] = useState(camposRegistro);)
+    const [objeto, setObjeto] = useState(camposRegistro);
 
 
 
@@ -17,3 +17,6 @@ const AppForm = () => {
 }
 camp
 export default AppForm
+
+
+
